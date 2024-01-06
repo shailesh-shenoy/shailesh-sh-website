@@ -28,7 +28,7 @@ const Project: React.FC<Project> = ({ name, description, imageUrl, github, link,
                 </CardBody>
 
                 <CardFooter mt="auto">
-                    <Stack direction="column" spacing={3} align="center" w="100%">
+                    <Stack direction="column" spacing={3} w="100%">
                         <Stack direction="row" spacing={2} align="center" >
                             {
                                 skills?.map((skill) => (

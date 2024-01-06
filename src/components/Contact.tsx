@@ -1,23 +1,14 @@
-import { Box, Heading, Text, Input, Textarea, Button } from "@chakra-ui/react";
-
+import { Box, Heading, Text, Input, Textarea, Button, Stack, Container, Link, Flex } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { mailToText } from "./types";
+import { EmailIcon } from "@chakra-ui/icons";
 export default function Contact() {
     return (
-        <Box>
+        <Stack as="section" w={"100%"} maxW="4xl" bg="white" p={4}>
             <Heading>Contact Me</Heading>
-            <Text>Feel free to reach out to me for any inquiries or collaborations.</Text>
-            <Box mt={4}>
-                <Input placeholder="Your Name" />
-            </Box>
-            <Box mt={4}>
-                <Input placeholder="Your Email" />
-            </Box>
-            <Box mt={4}>
-                <Textarea placeholder="Your Message" />
-            </Box>
-            <Button mt={4} colorScheme="blue">
-                Send Message
-            </Button>
-        </Box>
+            <Text>Want to talk tech or build something with me?</Text>
+            <Button as={NextLink} href={mailToText} target="_blank" variant="solid" colorScheme="green" w={40} textAlign="center">Reach out to me</Button>
+        </Stack>
     );
 };
 

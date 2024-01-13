@@ -15,7 +15,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-          <Stack direction="column" bg={"gray.50"} align="center" as="main" minH={"100vh"} gap={8} p={8}>{children}</Stack><Footer />
+          <Stack direction="column" bg={"gray.50"} align="center" as="main" minH={"100vh"} gap={48} p={8}>{children}</Stack><Footer />
         </Providers>
       </body>
     </html>

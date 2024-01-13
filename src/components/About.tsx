@@ -3,7 +3,7 @@ import { allSkills } from "./types"
 import Skill from "./Skill";
 export default function About() {
     return (
-        <Stack as="section" w={"100%"} maxW="8xl" bg="white" p={4}>
+        <Stack as="section" w={"100%"} maxW="4xl" bg="white" p={4}>
             <Heading as="h2">About Me</Heading>
             <Text>
                 I am a Web3 enthusiast looking to reshape the internet by crafting the next generation of decentralized applications.

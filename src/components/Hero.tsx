@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Stack, Text, Image, chakra, shouldForwardProp, Link, Button } from "@chakra-ui/react";
 import { isValidMotionProp, motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
     const ChakraHeader = chakra(motion.h1, {
@@ -10,7 +11,7 @@ export default function Hero() {
     });
 
     return (
-        <Flex as="section" w={"100%"} maxW="7xl" bg="white" direction={{ base: "column", md: "row" }} m={16} border={1} borderStyle="solid" borderColor="gray.500">
+        <Flex as="section" w={"100%"} maxW="7xl" bg="white" direction={{ base: "column", lg: "row" }} m={16} border={1} borderStyle="solid" borderColor="gray.500">
             <Stack flex={1} p={8}>
                 <ChakraText fontSize="3xl" color="gray.900" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{
                     type: "spring",
@@ -35,7 +36,7 @@ export default function Hero() {
                     {"I'm Shailesh."}
                 </ChakraHeader>
                 <Heading as="h2" size="xl" mb={12}>
-                    Software Engineer.
+                    <TypeAnimation sequence={[" ", 1000, "Software Engineer", 1000, "Full Stack Developer", 1000, "Web3 Enthusiast", 1000]} repeat={Infinity} />
                 </Heading>
                 <Text fontSize="2xl">
                     Decentralizing the future,

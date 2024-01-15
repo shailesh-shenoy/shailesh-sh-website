@@ -21,22 +21,26 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box
+    <Flex
       as="header"
+      width="100%"
+      justify="center"
       bg="gray.50"
       color={"primary.900"}
       backdropFilter="saturate(180%) blur(10px)"
     >
       <Flex
         as="nav"
-        h={14}
-        py={2}
-        px={4}
+        w="100%"
+        maxW="7xl"
+        h={16}
+        py={4}
         align={"center"}
+        bgImage="/icons/chain_horizontal_1.png" bgSize="auto 16px" bgRepeat="repeat-x" bgPosition="center"
       >
 
-        <Flex flex={1} align={"center"} px={4}>
-          <Link as={NextLink} href="/">
+        <Flex flex={1} align={"center"} >
+          <Link as={NextLink} href="/" bg="gray.50" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
             <Image src="/logo.png" alt="Shailesh Shenoy's Portfolio" h={7} w="auto" />
           </Link>
         </Flex>
@@ -66,21 +70,23 @@ export default function Navbar() {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Box>
+    </Flex>
   );
 }
 
 const DesktopNav = () => {
   return (
-    <Stack as={List} direction={"row"} spacing={10} align="center" justify="space-evenly" flex={1}>
-      {NAV_ITEMS.map((navItem) => (
-        <ListItem key={navItem.label}>
-          <Link as={NextLink} href={navItem.link}>
-            {navItem.label}
-          </Link>
-        </ListItem>
-      ))}
-    </Stack>
+    <Flex justify="center" flex="1">
+      <Stack as={List} direction={"row"} spacing={36} align="center" justify="space-evenly" >
+        {NAV_ITEMS.map((navItem) => (
+          <ListItem key={navItem.label} bg="gray.50" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
+            <Link as={NextLink} href={navItem.link}>
+              {navItem.label}
+            </Link>
+          </ListItem>
+        ))}
+      </Stack>
+    </Flex>
   );
 };
 

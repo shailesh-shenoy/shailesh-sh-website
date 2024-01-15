@@ -25,17 +25,17 @@ export const allSkills: Record<string, Skill> = {
         name: 'MongoDB',
         imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
     },
-    "PostgreSQL": {
-        name: 'PostgreSQL',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    "C#": {
+        name: 'C#',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
     },
     "Go": {
         name: 'Go',
         imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
     },
-    "Rust": {
-        name: 'Rust',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+    "Unity": {
+        name: 'Unity',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
     },
     "NextJS": {
         name: 'NextJS',
@@ -75,12 +75,12 @@ export const projects: Project[] = [
     },
     {
         name: "Prisoner's Dilemmata",
-        description: "A cellular automata exploring the Prisoner's Dilemma with various strategies.",
+        description: "A customizable cellular automata used to explore and visualize the Prisoner's Dilemma with various strategies.",
         imageUrl: '/projects/dilemmata.jpg',
         link: "#Projects",
         github: "",
         pageLink: '/projects/gameofdilemmas',
-        skills: ['Rust']
+        skills: ['Unity', "C#"]
     },
 
 ];

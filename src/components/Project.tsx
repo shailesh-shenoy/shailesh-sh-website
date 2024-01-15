@@ -26,25 +26,21 @@ const Project: React.FC<Project> = ({
   skills,
 }) => {
   return (
-    <Flex
-      maxW={"4xl"}
-      direction={"row"}
-      bg="gray.100"
-      _after={{
-        content: "url(/icons/chain_vertical.svg)",
-        w: "100%",
-        h: "128px",
-      }}
+    <Flex w="100%"
+      direction={{ base: "column", md: "row" }}
+      border={1} borderColor="gray.500" borderStyle="solid"
     >
       <Image
-        w={"64"}
+        minW={"64"}
+        flex={1}
         h={"auto"}
         src={imageUrl}
         alt="Caffe Latte"
         bg="gray.100"
+        borderRight={1} borderColor="gray.300" borderStyle="solid"
       />
 
-      <Stack direction="column" p={4} flex={1}>
+      <Stack direction="column" p={4} flex={3}>
         <Heading as="h4" size="md">
           {name}
         </Heading>

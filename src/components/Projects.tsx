@@ -3,7 +3,7 @@ import { projects } from "./types";
 import Project from "./Project";
 export default function Projects() {
     return (
-        <Box as="section" w={"100%"} maxW="4xl" bg="white" p={8} border={1} borderStyle="solid" borderColor="gray.500">
+        <Box as="section" id="projects" w={"100%"} maxW="4xl" bg="white" p={8} border={1} borderStyle="solid" borderColor="gray.500">
             <Heading as="h2" size="lg" mb={8} textAlign="center">
                 Projects
             </Heading>

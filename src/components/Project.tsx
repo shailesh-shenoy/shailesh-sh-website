@@ -28,16 +28,15 @@ const Project: React.FC<Project> = ({
   return (
     <Flex w="100%"
       direction={{ base: "column", md: "row" }}
-      border={1} borderColor="gray.500" borderStyle="solid"
+      border={1} borderColor="gray.900" borderStyle="solid"
     >
       <Image
         minW={"64"}
         flex={1}
         h={"auto"}
         src={imageUrl}
-        alt="Caffe Latte"
-        bg="gray.100"
-        borderRight={1} borderColor="gray.300" borderStyle="solid"
+        alt={name}
+        borderRight={1} borderColor="gray.900" borderStyle="solid"
       />
 
       <Stack direction="column" p={4} flex={3}>

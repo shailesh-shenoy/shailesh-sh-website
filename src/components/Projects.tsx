@@ -3,7 +3,17 @@ import { projects } from "./types";
 import Project from "./Project";
 export default function Projects() {
     return (
-        <Box as="section" id="projects" w={"100%"} maxW="4xl" bg="white" p={8} border={1} borderStyle="solid" borderColor="gray.500">
+        <Box as="section" id="projects" w={"100%"} maxW="4xl" bgImage="linear-gradient(
+            45deg,
+            hsl(16deg 100% 63%) 0%,
+            hsl(14deg 100% 69%) 1%,
+            hsl(12deg 100% 75%) 3%,
+            hsl(10deg 100% 81%) 5%,
+            hsl(8deg 100% 86%) 8%,
+            hsl(5deg 100% 91%) 14%,
+            hsl(3deg 100% 95%) 30%,
+            hsl(0deg 14% 99%) 100%
+          )" p={8} border={2} borderStyle="solid" borderColor="#FF8066">
             <Heading as="h2" size="lg" mb={8} textAlign="center">
                 Projects
             </Heading>

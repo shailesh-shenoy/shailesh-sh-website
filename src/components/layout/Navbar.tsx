@@ -23,10 +23,12 @@ export default function Navbar() {
   return (
     <Flex
       as="header"
+      flexWrap={"wrap"}
       width="100%"
+      p={2}
       justify="center"
-      bg="gray.50"
-      color={"primary.900"}
+      bg="#0D0D0D"
+      color={"gray.50"}
       backdropFilter="saturate(180%) blur(10px)"
     >
       <Flex
@@ -36,22 +38,18 @@ export default function Navbar() {
         h={16}
         py={4}
         align={"center"}
-        bgImage="/icons/chain_horizontal_1.png" bgSize="auto 16px" bgRepeat="repeat-x" bgPosition="center"
+        bgImage={{ md: "/icons/chain_white.png" }} bgSize="auto 16px" bgRepeat="repeat-x" bgPosition="center"
       >
 
         <Flex flex={1} align={"center"} >
-          <Link as={NextLink} href="/" bg="gray.50" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
+          <Link as={NextLink} href="/" bg="#0D0D0D" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
             <Image src="/logo.png" alt="Shailesh Shenoy's Portfolio" h={7} w="auto" />
           </Link>
         </Flex>
 
-        <Flex
-          display={{ base: "none", md: "flex" }}
-          flex={2} justify="space-between"
-        >
-          <DesktopNav />
-          <ThemeButton />
-        </Flex>
+
+        <DesktopNav />
+
 
         <Flex display={{ base: "flex", md: "none" }}
         >
@@ -66,7 +64,7 @@ export default function Navbar() {
           />
         </Flex>
       </Flex>
-
+      <Box h={0} flexBasis={"100%"} />
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
@@ -76,31 +74,29 @@ export default function Navbar() {
 
 const DesktopNav = () => {
   return (
-    <Flex justify="center" flex="1">
-      <Stack as={List} direction={"row"} spacing={36} align="center" justify="space-evenly" >
-        {NAV_ITEMS.map((navItem) => (
-          <ListItem key={navItem.label} bg="gray.50" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
-            <Link as={NextLink} href={navItem.link}>
-              {navItem.label}
-            </Link>
-          </ListItem>
-        ))}
-      </Stack>
-    </Flex>
-  );
-};
-
-const MobileNav = () => {
-  return (
-    <List bg="transparent" p={4} display={{ md: "none" }} padding={4}>
+    <Stack flex={1} as={List} direction={"row"} align="center" justify="space-between" display={{ base: "none", md: "flex" }}>
       {NAV_ITEMS.map((navItem) => (
-        <ListItem key={navItem.label} px={4} mt={2}>
+        <ListItem key={navItem.label} bg="#0D0D0D" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
           <Link as={NextLink} href={navItem.link}>
             {navItem.label}
           </Link>
         </ListItem>
       ))}
-      <ThemeButton />
-    </List>
+    </Stack>
+  );
+};
+
+const MobileNav = () => {
+  return (
+    <Flex as={List} bg="transparent" p={8} display={{ md: "none" }} direction="column">
+      {NAV_ITEMS.map((navItem, i, all) => (
+        <Flex as={ListItem} key={navItem.label} direction="column" align="center">
+          <Link as={NextLink} href={navItem.link} px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
+            {navItem.label}
+          </Link>
+          {(i < all.length - 1) && <Image src="/icons/chain_vertical_alt_white.png" alt="Connecting chain" h="12" w="auto" aria-hidden />}
+        </Flex>
+      ))}
+    </Flex>
   );
 };

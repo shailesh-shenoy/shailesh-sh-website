@@ -38,21 +38,34 @@ export default function Navbar() {
         h={16}
         py={4}
         align={"center"}
-        bgImage={{ md: "/icons/chain_white.png" }} bgSize="auto 16px" bgRepeat="repeat-x" bgPosition="center"
+        bgImage={{ md: "/icons/chain_white.png" }}
+        bgSize="auto 14px"
+        bgRepeat="repeat-x"
+        bgPosition="center"
       >
-
-        <Flex flex={1} align={"center"} >
-          <Link as={NextLink} href="/" bg="#0D0D0D" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
-            <Image src="/logo.png" alt="Shailesh Shenoy's Portfolio" h={7} w="auto" />
+        <Flex flex={1} align={"center"}>
+          <Link
+            as={NextLink}
+            href="/"
+            bg="#0D0D0D"
+            px={4}
+            py={2}
+            border="1px"
+            borderColor="gray.500"
+            borderStyle="solid"
+          >
+            <Image
+              src="/logo.png"
+              alt="Shailesh Shenoy's Portfolio"
+              h={7}
+              w="auto"
+            />
           </Link>
         </Flex>
 
-
         <DesktopNav />
 
-
-        <Flex display={{ base: "flex", md: "none" }}
-        >
+        <Flex display={{ base: "flex", md: "none" }}>
           <IconButton
             onClick={onToggle}
             icon={
@@ -74,9 +87,24 @@ export default function Navbar() {
 
 const DesktopNav = () => {
   return (
-    <Stack flex={1} as={List} direction={"row"} align="center" justify="space-between" display={{ base: "none", md: "flex" }}>
+    <Stack
+      flex={1}
+      as={List}
+      direction={"row"}
+      align="center"
+      justify="space-between"
+      display={{ base: "none", md: "flex" }}
+    >
       {NAV_ITEMS.map((navItem) => (
-        <ListItem key={navItem.label} bg="#0D0D0D" px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
+        <ListItem
+          key={navItem.label}
+          bg="#0D0D0D"
+          px={4}
+          py={2}
+          border="1px"
+          borderColor="gray.500"
+          borderStyle="solid"
+        >
           <Link as={NextLink} href={navItem.link}>
             {navItem.label}
           </Link>
@@ -88,13 +116,40 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
   return (
-    <Flex as={List} bg="transparent" p={8} display={{ md: "none" }} direction="column">
+    <Flex
+      as={List}
+      bg="transparent"
+      p={8}
+      display={{ md: "none" }}
+      direction="column"
+    >
       {NAV_ITEMS.map((navItem, i, all) => (
-        <Flex as={ListItem} key={navItem.label} direction="column" align="center">
-          <Link as={NextLink} href={navItem.link} px={4} py={2} border="1px" borderColor="gray.500" borderStyle="solid">
+        <Flex
+          as={ListItem}
+          key={navItem.label}
+          direction="column"
+          align="center"
+        >
+          <Link
+            as={NextLink}
+            href={navItem.link}
+            px={4}
+            py={2}
+            border="1px"
+            borderColor="gray.500"
+            borderStyle="solid"
+          >
             {navItem.label}
           </Link>
-          {(i < all.length - 1) && <Image src="/icons/chain_vertical_alt_white.png" alt="Connecting chain" h="12" w="auto" aria-hidden />}
+          {i < all.length - 1 && (
+            <Image
+              src="/icons/chain_vertical_alt_white.png"
+              alt="Connecting chain"
+              h="12"
+              w="auto"
+              aria-hidden
+            />
+          )}
         </Flex>
       ))}
     </Flex>

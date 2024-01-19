@@ -27,7 +27,7 @@ export default function Contact() {
             hsl(222deg 100% 93%) 49%,
             hsl(223deg 100% 97%) 72%,
             hsl(0deg 0% 100%) 100%
-          )" p={8} mb={16} direction="column" align="center" border={2} borderStyle="solid" borderColor="green">
+          )" p={8} mb={16} direction="column" align="center" border={2} borderStyle="solid" borderColor="blue.500">
             <Heading as="h2" size="lg" mb={8} textAlign="center">
                 Contact
             </Heading>
@@ -37,7 +37,7 @@ export default function Contact() {
                 Whether you have an idea, a job opportunity, or just a friendly greeting, I would love to hear from you. 
                 Don’t hesitate to contact me and let’s make something awesome together!`}
             </Text>
-            <Button mt={8} as={NextLink} href="" variant="ghost" border={1} borderStyle="solid" colorScheme="blue" borderColor="blue.700" px={4} py={2} borderRadius={0}>Get in touch</Button>
+            <Button mt={8} as={NextLink} href="" variant="ghost" border={1} borderStyle="solid" colorScheme="blue" borderColor="blue.500" px={4} py={2} borderRadius={0}>Get in touch</Button>
         </Flex>
     );
 }

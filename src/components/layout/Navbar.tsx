@@ -15,7 +15,6 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
 import { NAV_ITEMS } from "./types";
-import ThemeButton from "./ThemeButton";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -48,16 +47,11 @@ export default function Navbar() {
             as={NextLink}
             href="/"
             bg="#0D0D0D"
-            px={4}
-            py={2}
-            border="1px"
-            borderColor="gray.500"
-            borderStyle="solid"
           >
             <Image
               src="/logo.png"
               alt="Shailesh Shenoy's Portfolio"
-              h={7}
+              h={16}
               w="auto"
             />
           </Link>

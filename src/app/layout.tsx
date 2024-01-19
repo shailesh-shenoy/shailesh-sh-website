@@ -15,12 +15,14 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-          <Flex
+          <Flex fontFamily="primary"
+            fontSize="lg"
             direction="column"
             bg={"#0D0D0D"}
             align="center"
             as="main"
             p={2}
+            lineHeight={1.8}
           >
             {children}
           </Flex>

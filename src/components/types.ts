@@ -62,7 +62,7 @@ export const projects: Project[] = [
         link: 'https://verifree.vercel.app/',
         github: 'https://github.com/shailesh-shenoy/VeriFree',
         pageLink: '/projects/verifree',
-        skills: ['Solidity', 'NextJS', 'TypeScript', 'Avalanche', 'Chainlink', 'PolygonID']
+        skills: ['Solidity', 'NextJS', 'MongoDB', 'TypeScript']
     },
     {
         name: 'WagerWinz',

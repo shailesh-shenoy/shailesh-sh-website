@@ -26,6 +26,7 @@ export default function Navbar() {
       width="100%"
       p={2}
       justify="center"
+      fontFamily={"tertiary"}
       bg="#0D0D0D"
       color={"gray.50"}
       backdropFilter="saturate(180%) blur(10px)"
@@ -91,17 +92,18 @@ const DesktopNav = () => {
     >
       {NAV_ITEMS.map((navItem) => (
         <ListItem
+          as={NextLink}
+          href={navItem.link}
           key={navItem.label}
           bg="#0D0D0D"
           px={4}
-          py={2}
+          py={3}
           border="1px"
-          borderColor="gray.500"
+          borderColor="gray.400"
           borderStyle="solid"
+          _hover={{ bg: "gray.300", color: "black" }}
         >
-          <Link as={NextLink} href={navItem.link}>
-            {navItem.label}
-          </Link>
+          {navItem.label}
         </ListItem>
       ))}
     </Stack>
@@ -116,6 +118,7 @@ const MobileNav = () => {
       p={8}
       display={{ md: "none" }}
       direction="column"
+      lineHeight={1.8}
     >
       {NAV_ITEMS.map((navItem, i, all) => (
         <Flex
@@ -124,17 +127,20 @@ const MobileNav = () => {
           direction="column"
           align="center"
         >
-          <Link
+          <ListItem
             as={NextLink}
             href={navItem.link}
+            key={navItem.label}
+            bg="#0D0D0D"
             px={4}
-            py={2}
+            py={3}
             border="1px"
-            borderColor="gray.500"
+            borderColor="gray.400"
             borderStyle="solid"
+            _hover={{ bg: "gray.300", color: "black" }}
           >
             {navItem.label}
-          </Link>
+          </ListItem>
           {i < all.length - 1 && (
             <Image
               src="/icons/chain_vertical_alt_white.png"

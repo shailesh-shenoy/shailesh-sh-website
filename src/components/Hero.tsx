@@ -51,19 +51,19 @@ export default function Hero() {
             >
                 Shailesh Shenoy.
             </ChakraHeader>
-            <Heading as="h2" size="xl" mb={20} color={textColor}>
+            <Heading as="h2" size="xl" mb={20} color={textColor} fontFamily="secondary">
                 <TypeAnimation sequence={[" ", 1000, "Software Engineer", 1000, () => setTextColor('#C34A36'), "Full Stack Developer", 1000, () => setTextColor('#845EC2'), "Web3 Enthusiast", 1000, () => setTextColor('#F2B872'),]} repeat={Infinity} />
             </Heading>
-            <Text fontSize="2xl">
+            <Text fontSize="3xl" fontFamily="secondary">
                 Decentralizing the future,
             </Text>
-            <Text fontSize="2xl" mb={12}>
+            <Text fontSize="3xl" mb={12} fontFamily="secondary">
                 one block at a time.
             </Text>
             <Flex align="center" mt="auto">
-                <Button as={NextLink} href="" variant="solid" border={1} borderStyle="solid" bg="#845EC2" _hover={{ bg: "#4B4453" }} color="white" borderColor="white" px={4} py={2} borderRadius={0}>My Projects</Button>
+                <Button as={NextLink} href="" variant="solid" fontSize="xl" border={1} borderStyle="solid" bg="#845EC2" _hover={{ bg: "#4B4453" }} color="white" borderColor="white" px={4} py={2} borderRadius={0}>My Projects</Button>
                 <Image src="/icons/chain_horizontal_alt_white.png" alt="Connecting chain" h="4" w="auto" aria-hidden />
-                <Button as={NextLink} href="/Shailesh_Resume.pdf" target="_blank" variant="ghost" border={1} borderStyle="solid" color="#FF8066" borderColor="gray.300" px={4} py={2} borderRadius={0}>Resume</Button>
+                <Button as={NextLink} href="/Shailesh_Resume.pdf" target="_blank" variant="ghost" fontSize="xl" border={1} borderStyle="solid" color="#FF8066" borderColor="gray.300" px={4} py={2} borderRadius={0}>Resume</Button>
             </Flex>
         </Stack>
     );

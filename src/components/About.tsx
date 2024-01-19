@@ -15,7 +15,7 @@ export default function About() {
             hsl(263deg 65% 72%) 68%,
             hsl(263deg 72% 71%) 100%
           )" p={8} spacing={8} border={2} borderStyle="solid" borderColor="white">
-            <Heading as="h2" size="lg" textAlign="center">
+            <Heading as="h2" size="lg" textAlign="center" fontFamily="tertiary" fontWeight="500">
                 About Me
             </Heading>
             <Text>

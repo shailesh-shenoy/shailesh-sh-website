@@ -7,7 +7,7 @@ const Skill: React.FC<Skill> = ({ name, imageUrl }) => {
     return (
         <Flex direction="column" align="center" gap={4}>
             <Image src={imageUrl} alt={name} w="auto" h={50} />
-            <Heading as="h4" size="md">{name}</Heading>
+            <Heading as="h4" size="md" fontFamily="secondary">{name}</Heading>
         </Flex>
     );
 };

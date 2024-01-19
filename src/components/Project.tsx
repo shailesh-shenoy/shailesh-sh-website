@@ -36,7 +36,7 @@ const Project: React.FC<Project> = ({
         h={"auto"}
         src={imageUrl}
         alt={name}
-        borderRight={1} borderColor="gray.900" borderStyle="solid"
+        borderRight={1} borderBottom={1} borderColor="gray.900" borderStyle="solid"
       />
 
       <Stack direction="column" p={4} flex={3}>

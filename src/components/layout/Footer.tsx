@@ -18,12 +18,13 @@ export default function Footer() {
     return (
         <Box
             as="footer"
-            color="gray.900"
+            color="white"
             mt="auto"
-            bg="whiteAlpha.800"
+            bg="#0D0D0D"
             backdropFilter="saturate(180%) blur(10px)"
             borderTop={1}
-            borderStyle={"none"}
+            borderStyle={"solid"}
+            borderColor={"gray.50"}
         >
             <Flex as={Stack} pt={10} px={10} pb={5}>
                 <SimpleGrid

@@ -20,7 +20,7 @@ export default function About() {
             </Heading>
             <Text>
                 I am a Web3 enthusiast looking to reshape the internet by crafting the next generation of decentralized applications.
-                With 5 years of Software Engineering experience and multiple hackathon wins, I am always ready to take on new challenges and learn cutting-edge, technologies including:
+                With 5 years of Software Engineering experience and multiple hackathon wins, I am always ready to take on new challenges with cutting-edge technologies, including:
             </Text>
             <SimpleGrid columns={3} spacing={9}>
                 {Object.values(allSkills).map((skill) => (

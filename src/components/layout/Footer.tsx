@@ -38,7 +38,7 @@ export default function Footer() {
                             </Link>
                         </Flex>
                         <Text fontSize={"sm"} align={"center"}>
-                            © 2023 Shailesh Shenoy.
+                            © 2024 Shailesh Shenoy.
                         </Text>
                     </Stack>
 

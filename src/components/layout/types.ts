@@ -7,11 +7,11 @@ interface NavItem {
 export const NAV_ITEMS: Array<NavItem> = [
     {
         label: "About",
-        link: "#about",
+        link: "/#about",
     },
     {
         label: "Projects",
-        link: "#projects",
+        link: "/#projects",
     },
     {
         label: "Contact",
@@ -30,7 +30,7 @@ export const SOCIALS: Array<NavItem> = [
     },
     {
         label: "Resume",
-        link: "/resume",
+        link: "/Shailesh_Resume.pdf",
     },
 ];
 

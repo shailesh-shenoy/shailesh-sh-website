@@ -63,7 +63,7 @@ export default function Hero() {
             <Flex align="center" mt="auto">
                 <Button as={NextLink} href="" variant="solid" border={1} borderStyle="solid" bg="#845EC2" _hover={{ bg: "#4B4453" }} color="white" borderColor="white" px={4} py={2} borderRadius={0}>My Projects</Button>
                 <Image src="/icons/chain_horizontal_alt_white.png" alt="Connecting chain" h="4" w="auto" aria-hidden />
-                <Button as={NextLink} href="" variant="ghost" border={1} borderStyle="solid" color="#FF8066" borderColor="gray.300" px={4} py={2} borderRadius={0}>Contact me</Button>
+                <Button as={NextLink} href="/Shailesh_Resume.pdf" target="_blank" variant="ghost" border={1} borderStyle="solid" color="#FF8066" borderColor="gray.300" px={4} py={2} borderRadius={0}>Resume</Button>
             </Flex>
         </Stack>
     );

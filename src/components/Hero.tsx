@@ -49,7 +49,7 @@ export default function Hero() {
                 fontSize={{ base: "3xl", md: "5xl" }}
                 fontWeight="400"
                 lineHeight={1.2}
-                initial={{ x: -1000 }}
+                initial={{ x: -2000 }}
                 animate={{ x: 0 }}
                 transition={{
                     type: "spring",

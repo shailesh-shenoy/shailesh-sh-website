@@ -119,7 +119,6 @@ const MobileNav = () => {
       p={8}
       display={{ md: "none" }}
       direction="column"
-      lineHeight={1.8}
     >
       {NAV_ITEMS.map((navItem, i, all) => (
         <Flex

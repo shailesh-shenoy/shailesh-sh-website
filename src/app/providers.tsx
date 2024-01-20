@@ -2,10 +2,10 @@
 'use client'
 
 import { customTheme } from '@/theme'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraBaseProvider } from '@chakra-ui/react'
 
 export function Providers({ children }: { children: React.ReactNode }) {
-    return <ChakraProvider resetCSS={true} theme={customTheme}>
+    return <ChakraBaseProvider resetCSS={true} theme={customTheme}>
         {children}
-    </ChakraProvider>
+    </ChakraBaseProvider>
 }

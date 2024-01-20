@@ -28,7 +28,7 @@ const Project: React.FC<Project> = ({
   return (
     <Flex w="100%"
       direction={{ base: "column", md: "row" }}
-      border={1} borderColor="gray.900" borderStyle="solid"
+      border={1} borderColor="gray.900" borderStyle="solid" as={NextLink} href={link} target="_blank"
     >
       <Image
         minW={"64"}
@@ -60,9 +60,7 @@ const Project: React.FC<Project> = ({
                 )
             )}
           </Stack>
-          <Link as={NextLink} href={link} target="_blank" variant="">
-            Visit {name} <ExternalLinkIcon boxSize={4} />
-          </Link>
+
         </Stack>
       </Stack>
     </Flex>

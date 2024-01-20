@@ -15,14 +15,14 @@ export default function About() {
             hsl(263deg 65% 72%) 68%,
             hsl(263deg 72% 71%) 100%
           )" p={8} spacing={8} border={2} borderStyle="solid" borderColor="white">
-            <Heading as="h2" size="lg" textAlign="center" fontFamily="tertiary" fontWeight="500">
+            <Heading as="h2" fontSize="2xl" textAlign="center" fontFamily="tertiary" fontWeight="500">
                 About Me
             </Heading>
             <Text>
-                I am a Web3 enthusiast looking to reshape the internet by crafting the next generation of decentralized applications.
+                I am a Web3 believer looking to reshape the internet by crafting the next generation of decentralized applications.
                 With 5 years of Software Engineering experience and multiple hackathon wins, I am always ready to take on new challenges with cutting-edge technologies, including:
             </Text>
-            <SimpleGrid columns={3} spacing={9}>
+            <SimpleGrid columns={3} spacing={9} fontWeight={600}>
                 {Object.values(allSkills).map((skill) => (
                     <Skill key={skill.name} {...skill} />
                 ))}

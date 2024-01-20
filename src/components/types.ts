@@ -57,7 +57,8 @@ export interface Project {
 export const projects: Project[] = [
     {
         name: 'VeriFree',
-        description: 'A free avalanche subnet for Verified Students - Runner up prize at Chainlink Constellation hackathon in Avalanche track.',
+        description: `A permissioned blockchain where students with a valid educational email address can gain access to a student-led DAO as well as free transactions on the verifree Subnet.
+        Runner up prize at Chainlink Constellation hackathon in Avalanche track.`,
         imageUrl: '/projects/verifree.png',
         link: 'https://verifree.vercel.app/',
         github: 'https://github.com/shailesh-shenoy/VeriFree',
@@ -66,7 +67,7 @@ export const projects: Project[] = [
     },
     {
         name: 'WagerWinz',
-        description: 'A decentralized platform for creating, challenging and winning wagers on the price of ETH/USD.',
+        description: 'A decentralized, P2P platform for creating, challenging and winning wagers on the price of ETH/USD using smart contracts and Chainlink price feed.',
         imageUrl: '/projects/wagerwinz.jpg',
         link: 'https://wagerwinz.vercel.app/',
         github: 'https://github.com/shailesh-shenoy/wagerwinz',
@@ -75,7 +76,7 @@ export const projects: Project[] = [
     },
     {
         name: "Prisoner's Dilemmata",
-        description: "A customizable cellular automata used to explore and visualize the Prisoner's Dilemma with various strategies.",
+        description: "A customizable cellular automata used to explore and visualize the real-time evolution of various strategies in the Prisoner's Dilemma. Work in Progress.",
         imageUrl: '/projects/dilemmata.jpg',
         link: "#Projects",
         github: "",

@@ -1,6 +1,6 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendBaseTheme } from "@chakra-ui/react";
 
-export const customTheme = extendTheme({
+export const customTheme = extendBaseTheme({
   fonts: {
     primary: `'Lora Variable', sans-serif`,
     secondary: `'Bungee Inline', sans-serif`,

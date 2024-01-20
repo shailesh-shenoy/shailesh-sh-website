@@ -26,6 +26,9 @@ export default function Footer() {
             borderStyle={"solid"}
             borderColor={"gray.50"}
             lineHeight={1.8}
+            fontFamily="primary"
+            fontWeight={400}
+            fontSize="md"
         >
             <Flex as={Stack} pt={10} px={10} pb={5}>
                 <SimpleGrid
@@ -43,22 +46,25 @@ export default function Footer() {
                         </Text>
                     </Stack>
 
-                    <Stack align="center">
-                        <ListHeader>Site</ListHeader>
-                        {NAV_ITEMS.map((navItem) => (
-                            <Link as={NextLink} key={navItem.label} href={navItem.link}>
-                                {navItem.label}
-                            </Link>
-                        ))}
-                    </Stack>
-                    <Stack align="center">
-                        <ListHeader>Socials</ListHeader>
-                        {SOCIALS.map((navItem) => (
-                            <Link as={NextLink} key={navItem.label} href={navItem.link}>
-                                {navItem.label}
-                            </Link>
-                        ))}
-                    </Stack>
+                    <Flex direction="column" align="center" h="100%">
+                        <Stack align="flex-end">
+                            <ListHeader>Site</ListHeader>
+                            {NAV_ITEMS.map((navItem) => (
+                                <Link as={NextLink} key={navItem.label} href={navItem.link}>
+                                    {navItem.label}
+                                </Link>
+                            ))}
+                        </Stack>
+                    </Flex>
+                    <Flex direction="column" align="center" h="100%">
+                        <Stack align="flex-end"><ListHeader>Socials</ListHeader>
+                            {SOCIALS.map((navItem) => (
+                                <Link as={NextLink} key={navItem.label} href={navItem.link}>
+                                    {navItem.label}
+                                </Link>
+                            ))}
+                        </Stack>
+                    </Flex>
                 </SimpleGrid>
             </Flex>
         </Box>

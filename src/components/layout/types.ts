@@ -21,12 +21,12 @@ export const NAV_ITEMS: Array<NavItem> = [
 
 export const SOCIALS: Array<NavItem> = [
     {
-        label: "Linkedin",
-        link: "https://www.linkedin.com/in/shailesh-shenoy/",
-    },
-    {
         label: "Github",
         link: "https://github.com/shailesh-shenoy/wagerwinz",
+    },
+    {
+        label: "Linkedin",
+        link: "https://www.linkedin.com/in/shailesh-shenoy/",
     },
     {
         label: "Resume",

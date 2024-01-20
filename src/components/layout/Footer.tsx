@@ -28,7 +28,7 @@ export default function Footer() {
             lineHeight={1.8}
             fontFamily="primary"
             fontWeight={400}
-            fontSize="md"
+            fontSize="lg"
         >
             <Flex as={Stack} pt={10} px={10} pb={5}>
                 <SimpleGrid
@@ -41,7 +41,7 @@ export default function Footer() {
                                 <Image src="/logo.png" alt="Shailesh Shenoy's Portfolio" w={48} h="auto" />
                             </Link>
                         </Flex>
-                        <Text fontSize={"sm"} align={"center"}>
+                        <Text fontSize={"md"} align={"center"}>
                             © 2024 Shailesh Shenoy.
                         </Text>
                     </Stack>
@@ -50,7 +50,7 @@ export default function Footer() {
                         <Stack align="flex-end">
                             <ListHeader>Site</ListHeader>
                             {NAV_ITEMS.map((navItem) => (
-                                <Link as={NextLink} key={navItem.label} href={navItem.link}>
+                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "#68a143" }}>
                                     {navItem.label}
                                 </Link>
                             ))}
@@ -59,7 +59,7 @@ export default function Footer() {
                     <Flex direction="column" align="center" h="100%">
                         <Stack align="flex-end"><ListHeader>Socials</ListHeader>
                             {SOCIALS.map((navItem) => (
-                                <Link as={NextLink} key={navItem.label} href={navItem.link}>
+                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "#68a143" }}>
                                     {navItem.label}
                                 </Link>
                             ))}
@@ -73,7 +73,7 @@ export default function Footer() {
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
     return (
-        <Heading as="h4" fontWeight={"500"} color="gray.400" fontSize={"lg"} fontFamily="tertiary" mb={2}>
+        <Heading lineHeight="1.4" as="h4" fontWeight={"500"} color="gray.400" fontSize={"2xl"} fontFamily="secondary" mb={2}>
             {children}
         </Heading>
     );

@@ -40,7 +40,7 @@ const Project: React.FC<Project> = ({
       />
 
       <Stack direction="column" p={4} flex={3}>
-        <Heading as="h4" size="md" fontFamily="secondary">
+        <Heading as="h4" fontSize="2xl" fontFamily="secondary">
           {name}
         </Heading>
 

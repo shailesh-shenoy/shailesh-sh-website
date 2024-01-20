@@ -28,7 +28,7 @@ export default function Contact() {
             hsl(223deg 100% 97%) 72%,
             hsl(0deg 0% 100%) 100%
           )" p={8} mb={16} direction="column" align="center" border={2} borderStyle="solid" borderColor="blue.500">
-            <Heading as="h2" fontSize="2xl" mb={8} textAlign="center" fontFamily="tertiary" fontWeight="500">
+            <Heading as="h2" fontSize="3xl" mb={8} textAlign="center" fontFamily="secondary" fontWeight="500" lineHeight={1.4}>
                 Contact
             </Heading>
             <Text>

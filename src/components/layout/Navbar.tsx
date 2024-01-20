@@ -26,7 +26,8 @@ export default function Navbar() {
       width="100%"
       p={2}
       justify="center"
-      fontFamily={"tertiary"}
+      fontSize="xl"
+      fontFamily={"secondary"}
       bg="#0D0D0D"
       color={"gray.50"}
       backdropFilter="saturate(180%) blur(10px)"
@@ -96,8 +97,8 @@ const DesktopNav = () => {
           href={navItem.link}
           key={navItem.label}
           bg="#0D0D0D"
-          px={4}
-          py={3}
+          px={5}
+          py={2}
           border="1px"
           borderColor="gray.400"
           borderStyle="solid"
@@ -132,8 +133,8 @@ const MobileNav = () => {
             href={navItem.link}
             key={navItem.label}
             bg="#0D0D0D"
-            px={4}
-            py={3}
+            px={5}
+            py={2}
             border="1px"
             borderColor="gray.400"
             borderStyle="solid"

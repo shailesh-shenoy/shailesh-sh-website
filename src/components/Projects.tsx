@@ -14,7 +14,7 @@ export default function Projects() {
             hsl(3deg 100% 95%) 30%,
             hsl(0deg 14% 99%) 100%
           )" p={8} border={2} borderStyle="solid" borderColor="#FF8066">
-            <Heading as="h2" fontSize="2xl" mb={8} textAlign="center" fontFamily="tertiary" fontWeight="500">
+            <Heading as="h2" fontSize="3xl" mb={8} textAlign="center" fontFamily="secondary" fontWeight="500" lineHeight={1.4}>
                 Projects
             </Heading>
             <Text mb={8}>The best way to learn new tech is to build something with it, so I try to keep myself busy with some projects. Check out some of my recent work!</Text>

@@ -6,9 +6,9 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import ChainBlock from "@/components/layout/ChainBlock";
 
-import '@fontsource/bebas-neue';
-import '@fontsource-variable/exo-2';
-import '@fontsource/bungee-inline';
+import "@fontsource/bebas-neue"; // Supports weights 400-700
+import "@fontsource-variable/lora";
+import "@fontsource/bungee-inline";
 
 export default function Home() {
   return (

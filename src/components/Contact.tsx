@@ -1,18 +1,11 @@
 import {
-    Box,
     Heading,
     Text,
-    Input,
-    Textarea,
     Button,
-    Stack,
-    Container,
-    Link,
     Flex,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { mailToText } from "./types";
-import { EmailIcon } from "@chakra-ui/icons";
 export default function Contact() {
     return (
         <Flex as="section" id="#contact" w={"100%"} maxW="4xl" bgImage="linear-gradient(
@@ -37,7 +30,9 @@ export default function Contact() {
                 Whether you have an idea, a job opportunity, or just a friendly greeting, I would love to hear from you. 
                 Don’t hesitate to contact me and let’s make something awesome together!`}
             </Text>
-            <Button mt={8} fontSize="xl" as={NextLink} href="" variant="ghost" fontWeight={400} _hover={{ bg: "blue.50", color: "blue.700", borderColor: "blue.700" }} border={1} borderStyle="solid" color="blue.600" colorScheme="blue" borderColor="blue.600" px={4} py={2} borderRadius={0}>Get in touch</Button>
+            <Button mt={8} fontSize="xl"
+                as={NextLink} href={mailToText} variant="ghost"
+                fontWeight={400} _hover={{ bg: "blue.50", color: "blue.700", borderColor: "blue.700" }} _focus={{ bg: "blue.50", color: "blue.700", borderColor: "blue.700", borderWidth: 3 }} border={1} borderStyle="solid" color="blue.600" colorScheme="blue" borderColor="blue.600" px={4} py={2} borderRadius={0}>Get in touch</Button>
         </Flex>
     );
 }

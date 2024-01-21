@@ -12,9 +12,9 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 import { Project, projects, allSkills } from "./types";
 import NextLink from "next/link";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Project: React.FC<Project> = ({
   name,
@@ -22,13 +22,16 @@ const Project: React.FC<Project> = ({
   imageUrl,
   github,
   link,
-  pageLink,
+  disabled,
   skills,
 }) => {
+  const router = useRouter();
   return (
     <Flex w="100%"
       direction={{ base: "column", md: "row" }}
-      border={1} borderColor="gray.900" borderStyle="solid" as={NextLink} href={link} target="_blank"
+      //@ts-ignore
+      border={1} borderColor="gray.900" borderStyle="solid" as={disabled ? "div" : NextLink} href={link} target="_blank"
+      _hover={{ transform: "scale(1.02)" }} _focusWithin={{ transform: "scale(1.02)" }} transition="transform 0.2s ease-in-out"
     >
       <Image
         minW={"64"}
@@ -59,6 +62,17 @@ const Project: React.FC<Project> = ({
                   />
                 )
             )}
+            {!disabled && <Image w={10} ml="auto"
+              role="link" tabIndex={0} data-href={github} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github link" bg="white" border={1} borderStyle="solid" borderRadius={8}
+              _hover={{ transform: "scale(1.2)" }}
+              _focus={{ transform: "scale(1.2)" }}
+              transition="transform 0.2s ease-in-out" onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                router.push(github);
+              }
+              }
+            />}
           </Stack>
 
         </Stack>

@@ -52,6 +52,7 @@ export interface Project {
     github: string;
     pageLink: string;
     skills?: string[];
+    disabled?: boolean;
 }
 
 export const projects: Project[] = [
@@ -81,9 +82,10 @@ export const projects: Project[] = [
         link: "#Projects",
         github: "",
         pageLink: '/projects/gameofdilemmas',
-        skills: ['Unity', "C#"]
+        skills: ['Unity', "C#"],
+        disabled: true
     },
 
 ];
 
-export const mailToText = `mailto:shenoy.shailesh97@gmail.com?subject=Reaching%20out%20from%20your%20portfolio`;
+export const mailToText = `mailto:shenoy.sh@northeastern.edu?subject=Reaching%20out%20from%20your%20portfolio`;

@@ -1,5 +1,4 @@
 import {
-    Box,
     Flex,
     Heading,
     Stack,
@@ -7,7 +6,6 @@ import {
     Image,
     chakra,
     shouldForwardProp,
-    Link,
     Button,
 } from "@chakra-ui/react";
 import { isValidMotionProp, motion } from "framer-motion";
@@ -137,6 +135,8 @@ export default function Hero() {
                     as={NextLink}
                     href="/Shailesh_Resume.pdf"
                     target="_blank"
+                    _focus={{ bg: "orange.50", color: "orange.700", borderColor: "orange.700", borderWidth: 3 }}
+                    tabIndex={0}
                     variant="ghost"
                     border={1}
                     borderStyle="solid"
@@ -158,11 +158,12 @@ export default function Hero() {
                 />
                 <Button
                     as={NextLink}
-                    href=""
+                    href="/#Projects"
                     variant="solid"
                     border={1}
                     borderStyle="solid"
                     bg="#845EC2"
+                    _focus={{ bg: "#4B4453", borderWidth: 3 }}
                     _hover={{ bg: "#4B4453" }}
                     color="white"
                     borderColor="white"

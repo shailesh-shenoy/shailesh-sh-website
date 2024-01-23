@@ -158,7 +158,7 @@ export default function Hero() {
                 />
                 <Button
                     as={NextLink}
-                    href="/#Projects"
+                    href="/#projects"
                     variant="solid"
                     border={1}
                     borderStyle="solid"

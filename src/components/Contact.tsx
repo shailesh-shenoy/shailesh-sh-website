@@ -8,7 +8,7 @@ import NextLink from "next/link";
 import { mailToText } from "./types";
 export default function Contact() {
     return (
-        <Flex as="section" id="#contact" w={"100%"} maxW="4xl" bgImage="linear-gradient(
+        <Flex as="section" id="contact" w={"100%"} maxW="4xl" bgImage="linear-gradient(
             210deg,
             hsl(210deg 100% 60%) 0%,
             hsl(214deg 100% 68%) 4%,

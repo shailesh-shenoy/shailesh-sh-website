@@ -33,13 +33,25 @@ export const allSkills: Record<string, Skill> = {
         name: 'Go',
         imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
     },
-    "Unity": {
-        name: 'Unity',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
+    "AWS": {
+        name: 'AWS',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
     },
     "NextJS": {
         name: 'NextJS',
         imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    },
+    "Postgres": {
+        name: 'Postgres',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    },
+    "Unity": {
+        name: 'Unity',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
+    },
+    "Java": {
+        name: 'Java',
+        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     },
 };
 
@@ -76,13 +88,13 @@ export const projects: Project[] = [
         skills: ['Solidity', 'React', 'Chainlink']
     },
     {
-        name: "Prisoner's Dilemmata",
-        description: "A customizable cellular automata used to explore and visualize the real-time evolution of various strategies in the Prisoner's Dilemma. Work in Progress.",
-        imageUrl: '/projects/dilemmata.jpg',
+        name: "AllCoinz",
+        description: "A simple and easy-to-use crypto portfolio aggregator which let's you track all your coins across top exchanges and blockchains. View your portfolio on the web app or integrate into your own tools using the REST API. Work in Progress.",
+        imageUrl: '/projects/allcoinz.png',
         link: "#Projects",
         github: "",
-        pageLink: '/projects/gameofdilemmas',
-        skills: ['Unity', "C#"],
+        pageLink: '/projects/allcoinz',
+        skills: ['Go', "React", "Postgres", "AWS"],
         disabled: true
     },
 

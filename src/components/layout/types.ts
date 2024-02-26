@@ -22,7 +22,7 @@ export const NAV_ITEMS: Array<NavItem> = [
 export const SOCIALS: Array<NavItem> = [
     {
         label: "Github",
-        link: "https://github.com/shailesh-shenoy/wagerwinz",
+        link: "https://github.com/shailesh-shenoy/",
     },
     {
         label: "Linkedin",

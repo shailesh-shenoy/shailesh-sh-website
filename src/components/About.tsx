@@ -3,18 +3,7 @@ import { allSkills } from "./types"
 import Skill from "./Skill";
 export default function About() {
     return (
-        <Stack as="section" id="about" w={"100%"} maxW="4xl" bgImage="linear-gradient(
-            45deg,
-            hsl(0deg 0% 77%) 0%,
-            hsl(267deg 12% 77%) 19%,
-            hsl(267deg 22% 76%) 26%,
-            hsl(266deg 32% 75%) 32%,
-            hsl(265deg 41% 74%) 39%,
-            hsl(265deg 50% 73%) 46%,
-            hsl(264deg 58% 72%) 55%,
-            hsl(263deg 65% 72%) 68%,
-            hsl(263deg 72% 71%) 100%
-          )" p={8} spacing={8} border={2} borderStyle="solid" borderColor="white">
+        <Stack as="section" id="about" w={"100%"} maxW="4xl" bgColor="primary.dark" color="gray.50" p={8} spacing={8} border={2} borderStyle="solid" borderColor="gray.50" fontSize="xl">
             <Heading as="h2" fontSize="3xl" textAlign="center" fontFamily="secondary" fontWeight="500" lineHeight={1.4}>
                 About Me
             </Heading>

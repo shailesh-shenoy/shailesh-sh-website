@@ -3,11 +3,11 @@ import React from 'react';
 import { Skill } from './types';
 
 
-const Skill: React.FC<Skill> = ({ name, imageUrl }) => {
+const Skill: React.FC<Skill> = ({ name, iconClass }) => {
     return (
-        <Flex direction="column" align="center" gap={4}>
-            <Image src={imageUrl} alt={name} w="auto" h={50} />
-            <Heading as="h4" size="md">{name}</Heading>
+        <Flex direction="column" align="center" gap={4} color="tertiary.light" _odd={{ color: "secondary.light" }}>
+            <Box as="i" className={iconClass} fontSize="5xl" />
+            <Heading as="h4" size="md" color="gray.50">{name}</Heading>
         </Flex>
     );
 };

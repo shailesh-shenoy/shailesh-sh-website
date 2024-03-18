@@ -53,13 +53,7 @@ const Project: React.FC<Project> = ({
             {skills?.map(
               (skill) =>
                 allSkills[skill] && (
-                  <Image
-                    w={10}
-                    h="auto"
-                    key={skill}
-                    alt={skill}
-                    src={allSkills[skill]?.imageUrl}
-                  />
+                  <Box as="i" key={skill} className={allSkills[skill]?.iconClass} fontSize={"2xl"} color="secondary.light" />
                 )
             )}
             {!disabled && <Image w={10} ml="auto"

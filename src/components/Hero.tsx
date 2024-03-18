@@ -11,7 +11,6 @@ import {
 import { isValidMotionProp, motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import NextLink from "next/link";
-import { useState } from "react";
 
 const ChakraHeader = chakra(motion.h1, {
     shouldForwardProp: (prop) =>
@@ -23,7 +22,6 @@ const ChakraText = chakra(motion.p, {
 });
 
 export default function Hero() {
-    const [textColor, setTextColor] = useState("#F2B872");
 
     return (
         <Stack
@@ -31,15 +29,16 @@ export default function Hero() {
             p={8}
             w={"100%"}
             maxW="7xl"
-            bgImage="/images/hero_blocks_dark.jpg"
+            // bgImage="/images/hero_blocks_primary.jpg"
+            bgColor="primary.dark"
             bgSize="cover"
             bgPosition="center"
             direction="column"
             align="center"
             color="gray.50"
-            border={2}
+            border={1}
             borderStyle="solid"
-            borderColor="#FF8066"
+            borderColor="gray.50"
             minH="60vh"
             mt={12}
         >
@@ -66,16 +65,23 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 bgImage="linear-gradient(
-                    45deg,
-                    hsl(10deg 100% 70%) 0%,
-                    hsl(1deg 97% 72%) 24%,
-                    hsl(351deg 91% 69%) 36%,
-                    hsl(341deg 82% 66%) 46%,
-                    hsl(332deg 70% 62%) 55%,
-                    hsl(321deg 57% 58%) 65%,
-                    hsl(307deg 43% 54%) 74%,
-                    hsl(285deg 41% 55%) 84%,
-                    hsl(263deg 45% 56%) 100%
+                    40deg,
+                    hsl(7deg 100% 74%) 0%,
+                    hsl(4deg 84% 72%) 16%,
+                    hsl(360deg 70% 71%) 23%,
+                    hsl(355deg 59% 68%) 29%,
+                    hsl(349deg 50% 65%) 34%,
+                    hsl(342deg 41% 63%) 39%,
+                    hsl(334deg 34% 60%) 43%,
+                    hsl(323deg 28% 57%) 48%,
+                    hsl(308deg 22% 54%) 52%,
+                    hsl(289deg 21% 52%) 57%,
+                    hsl(272deg 24% 52%) 61%,
+                    hsl(257deg 27% 53%) 66%,
+                    hsl(244deg 30% 53%) 71%,
+                    hsl(232deg 36% 51%) 77%,
+                    hsl(223deg 50% 47%) 84%,
+                    hsl(211deg 97% 36%) 100%
                   )"
                 bgClip="text"
                 // @ts-ignore no problem in operation, although type error appears.
@@ -91,7 +97,7 @@ export default function Hero() {
                 as="h2"
                 fontSize={{ base: "2xl", md: "3xl" }}
                 mb={24}
-                color={textColor}
+                color="tertiary.light"
                 fontFamily="primary"
                 fontWeight="600"
                 textTransform={"uppercase"}
@@ -102,13 +108,13 @@ export default function Hero() {
                         1000,
                         "Software Engineer",
                         1000,
-                        () => setTextColor("#C34A36"),
+                        // () => setTextColor("#C34A36"),
                         "Full Stack Developer",
                         1000,
-                        () => setTextColor("#845EC2"),
+                        // () => setTextColor("#845EC2"),
                         "Web3 Builder",
                         1000,
-                        () => setTextColor("#F2B872"),
+                        // () => setTextColor("#F2B872"),
                     ]}
                     repeat={Infinity}
                 />
@@ -130,22 +136,22 @@ export default function Hero() {
             >
                 one block at a time.
             </Text>
-            <Flex align="center" mt="auto" fontSize="xl" fontWeight={400}>
+            <Flex align="center" mt="auto" fontSize="2xl" fontFamily="secondary" fontWeight={400} mb={4}>
                 <Button
                     as={NextLink}
                     href="/Shailesh_Resume.pdf"
                     target="_blank"
-                    _focus={{ bg: "orange.50", color: "orange.700", borderColor: "orange.700", borderWidth: 3 }}
                     tabIndex={0}
                     variant="ghost"
                     border={1}
                     borderStyle="solid"
-                    color="#FF8066"
-                    borderColor="gray.300"
+                    color="primary.light"
+                    borderColor="primary.light"
                     px={4}
                     py={2}
                     borderRadius={0}
-                    _hover={{ bg: "orange.50", color: "orange.700", borderColor: "orange.700" }}
+                    _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
+                    _hover={{ bg: "primary.light", color: "secondary.light" }}
                 >
                     Resume
                 </Button>
@@ -162,11 +168,11 @@ export default function Hero() {
                     variant="solid"
                     border={1}
                     borderStyle="solid"
-                    bg="#845EC2"
-                    _focus={{ bg: "#4B4453", borderWidth: 3 }}
-                    _hover={{ bg: "#4B4453" }}
-                    color="white"
-                    borderColor="white"
+
+                    _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
+                    _hover={{ bg: "secondary.light", color: "primary.light" }}
+                    color="secondary.light"
+                    borderColor="secondary.dark"
                     px={4}
                     py={2}
                     borderRadius={0}

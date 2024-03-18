@@ -28,7 +28,7 @@ export default function Navbar() {
       justify="center"
       fontSize="xl"
       fontFamily={"secondary"}
-      bg="#0D0D0D"
+      bg="primary.dark"
       color={"gray.50"}
       backdropFilter="saturate(180%) blur(10px)"
     >
@@ -36,7 +36,7 @@ export default function Navbar() {
         as="nav"
         w="100%"
         maxW="7xl"
-        h={16}
+        h={20}
         py={4}
         align={"center"}
         bgImage={{ md: "/icons/chain_white.png" }}
@@ -48,12 +48,12 @@ export default function Navbar() {
           <Link
             as={NextLink}
             href="/"
-            bg="#0D0D0D"
+            bg="primary.dark"
           >
             <Image
               src="/logo.png"
               alt="Shailesh Shenoy's Portfolio"
-              h={16}
+              h={20}
               w="auto"
             />
           </Link>
@@ -96,7 +96,7 @@ const DesktopNav = () => {
           as={NextLink}
           href={navItem.link}
           key={navItem.label}
-          bg="#0D0D0D"
+          bg="primary.dark"
           px={5}
           py={2}
           border="1px"
@@ -131,7 +131,7 @@ const MobileNav = () => {
             as={NextLink}
             href={navItem.link}
             key={navItem.label}
-            bg="#0D0D0D"
+            bg="primary.dark"
             px={5}
             py={2}
             border="1px"

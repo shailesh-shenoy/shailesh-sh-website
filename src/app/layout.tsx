@@ -23,6 +23,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ecf4ed" />
       </head>
@@ -32,7 +33,8 @@ export default function RootLayout({
           <Flex fontFamily="primary"
             fontSize="lg"
             direction="column"
-            bg={"#0D0D0D"}
+            bg={"primary.dark"}
+            color="primary.light"
             align="center"
             as="main"
             p={2}

@@ -50,7 +50,7 @@ export default function Footer() {
                         <Stack align="flex-end">
                             <ListHeader>Site</ListHeader>
                             {NAV_ITEMS.map((navItem) => (
-                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "#68a143" }}>
+                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "tertiary.light" }}>
                                     {navItem.label}
                                 </Link>
                             ))}
@@ -59,7 +59,7 @@ export default function Footer() {
                     <Flex direction="column" align="center" h="100%">
                         <Stack align="flex-end"><ListHeader>Socials</ListHeader>
                             {SOCIALS.map((navItem) => (
-                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "#68a143" }}>
+                                <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "tertiary.light" }}>
                                     {navItem.label}
                                 </Link>
                             ))}

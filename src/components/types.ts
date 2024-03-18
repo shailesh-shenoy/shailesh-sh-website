@@ -1,57 +1,57 @@
 export interface Skill {
     name: string;
-    imageUrl: string;
+    iconClass: string;
 }
 
 export const allSkills: Record<string, Skill> = {
     "Solidity": {
         name: "Solidity",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg",
+        iconClass: "devicon-solidity-plain",
     },
     "React": {
         name: 'React',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        iconClass: 'devicon-react-original',
     },
     // Add more skills here
     "TypeScript": {
         name: 'TypeScript',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+        iconClass: 'devicon-typescript-plain',
     },
     "Python": {
         name: 'Python',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        iconClass: 'devicon-python-plain',
     },
     "MongoDB": {
         name: 'MongoDB',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+        iconClass: 'devicon-mongodb-plain',
     },
     "C#": {
         name: 'C#',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+        iconClass: 'devicon-csharp-plain',
     },
     "Go": {
         name: 'Go',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
+        iconClass: 'devicon-go-plain',
     },
     "AWS": {
         name: 'AWS',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+        iconClass: 'devicon-amazonwebservices-plain',
     },
     "NextJS": {
         name: 'NextJS',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+        iconClass: 'devicon-nextjs-plain',
     },
     "Postgres": {
         name: 'Postgres',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+        iconClass: 'devicon-postgresql-plain',
     },
     "Unity": {
         name: 'Unity',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
+        iconClass: 'devicon-unity-plain',
     },
     "Java": {
         name: 'Java',
-        imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+        iconClass: 'devicon-java-plain',
     },
 };
 

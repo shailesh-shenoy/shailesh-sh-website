@@ -7,7 +7,7 @@ export const customTheme = extendBaseTheme({
   },
   colors: {
     primary: {
-      dark: "#0B0B0B",
+      dark: "#181818",
       light: "#F7FAFC"
     },
     secondary: {

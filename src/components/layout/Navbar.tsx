@@ -99,6 +99,8 @@ const DesktopNav = () => {
           bg="primary.dark"
           px={5}
           py={2}
+          w={140}
+          textAlign="center"
           border="1px"
           borderColor="gray.400"
           borderStyle="solid"

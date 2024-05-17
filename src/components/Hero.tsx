@@ -136,7 +136,7 @@ export default function Hero() {
             >
                 one block at a time.
             </Text>
-            <Flex align="center" mt="auto" fontSize="2xl" fontFamily="secondary" fontWeight={400} mb={4}>
+            <Stack direction="row" spacing={12} align="center" mt="auto" fontSize="2xl" fontFamily="secondary" fontWeight={400} mb={4}>
                 <Button
                     as={NextLink}
                     href="/Shailesh_Resume.pdf"
@@ -148,38 +148,33 @@ export default function Hero() {
                     color="primary.light"
                     borderColor="primary.light"
                     px={4}
-                    py={2}
+                    py={1}
+                    w={140}
                     borderRadius={0}
                     _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
                     _hover={{ bg: "primary.light", color: "secondary.light" }}
                 >
                     Resume
                 </Button>
-                <Image
-                    src="/icons/chain_horizontal_alt_white.png"
-                    alt="Connecting chain"
-                    h="5"
-                    w="auto"
-                    aria-hidden
-                />
+
                 <Button
                     as={NextLink}
                     href="/#projects"
                     variant="solid"
                     border={1}
                     borderStyle="solid"
-
+                    w={140}
                     _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
                     _hover={{ bg: "secondary.light", color: "primary.light" }}
                     color="secondary.light"
                     borderColor="secondary.dark"
                     px={4}
-                    py={2}
+                    py={1}
                     borderRadius={0}
                 >
                     Projects
                 </Button>
-            </Flex>
+            </Stack>
         </Stack>
     );
 }

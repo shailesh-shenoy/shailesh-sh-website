@@ -56,7 +56,7 @@ export const allSkills: Record<string, Skill> = {
 };
 
 
-export interface Project {
+export interface ProjectData {
     name: string;
     description: string;
     imageUrl: string;
@@ -67,7 +67,7 @@ export interface Project {
     disabled?: boolean;
 }
 
-export const projects: Project[] = [
+export const projects: ProjectData[] = [
     {
         name: 'VeriFree',
         description: `A permissioned blockchain where students with a valid educational email address can gain access to a student-led DAO as well as free transactions on the verifree Subnet.

@@ -148,7 +148,8 @@ export default function Hero() {
                     color="primary.light"
                     borderColor="primary.light"
                     px={4}
-                    py={2}
+                    py={1}
+                    w={140}
                     borderRadius={0}
                     _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
                     _hover={{ bg: "primary.light", color: "secondary.light" }}
@@ -168,13 +169,13 @@ export default function Hero() {
                     variant="solid"
                     border={1}
                     borderStyle="solid"
-
+                    w={140}
                     _focus={{ bg: "secondary.light", color: "primary.light", borderWidth: 3 }}
                     _hover={{ bg: "secondary.light", color: "primary.light" }}
                     color="secondary.light"
                     borderColor="secondary.dark"
                     px={4}
-                    py={2}
+                    py={1}
                     borderRadius={0}
                 >
                     Projects

@@ -13,10 +13,10 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import { Project, projects, allSkills } from "./types";
+import { ProjectData, projects, allSkills } from "./types";
 import NextLink from "next/link";
 
-const Project: React.FC<Project> = ({
+const Project: React.FC<ProjectData> = ({
   name,
   description,
   imageUrl,
@@ -29,9 +29,10 @@ const Project: React.FC<Project> = ({
   return (
     <Flex w="100%"
       direction={{ base: "column", md: "row" }}
+      filter="grayscale(0.9)"
       //@ts-ignore
       border={1} borderColor="gray.900" borderStyle="solid" as={disabled ? "div" : NextLink} href={link} target="_blank"
-      _hover={{ transform: "scale(1.02)" }} _focusWithin={{ transform: "scale(1.02)" }} transition="transform 0.2s ease-in-out"
+      _hover={{ transform: "scale(1.02)", filter: "grayscale(0.2)" }} _focusWithin={{ transform: "scale(1.02)" }} transition="transform 0.2s ease-in-out"
     >
       <Image
         minW={"64"}

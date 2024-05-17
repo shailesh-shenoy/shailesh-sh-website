@@ -136,7 +136,7 @@ export default function Hero() {
             >
                 one block at a time.
             </Text>
-            <Flex align="center" mt="auto" fontSize="2xl" fontFamily="secondary" fontWeight={400} mb={4}>
+            <Stack direction="row" spacing={12} align="center" mt="auto" fontSize="2xl" fontFamily="secondary" fontWeight={400} mb={4}>
                 <Button
                     as={NextLink}
                     href="/Shailesh_Resume.pdf"
@@ -156,13 +156,7 @@ export default function Hero() {
                 >
                     Resume
                 </Button>
-                <Image
-                    src="/icons/chain_horizontal_alt_white.png"
-                    alt="Connecting chain"
-                    h="5"
-                    w="auto"
-                    aria-hidden
-                />
+
                 <Button
                     as={NextLink}
                     href="/#projects"
@@ -180,7 +174,7 @@ export default function Hero() {
                 >
                     Projects
                 </Button>
-            </Flex>
+            </Stack>
         </Stack>
     );
 }

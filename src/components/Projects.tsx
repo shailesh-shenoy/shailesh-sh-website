@@ -8,7 +8,7 @@ export default function Projects() {
                 Projects
             </Heading>
             <Text mb={12}>The best way to learn new tech is to build something with it, so I try to keep myself busy with some projects. Check out some of my recent work!</Text>
-            <Stack direction="column" align="stretch" spacing={10}>
+            <Stack direction="column" align="stretch" spacing={10} mb={4}>
                 {projects.map((project) => (
                     <Project {...project} key={project.name} />
                 ))}

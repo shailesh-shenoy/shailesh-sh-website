@@ -39,10 +39,6 @@ export default function Navbar() {
         h={20}
         py={4}
         align={"center"}
-        bgImage={{ md: "/icons/chain_white.png" }}
-        bgSize="auto 14px"
-        bgRepeat="repeat-x"
-        bgPosition="center"
       >
         <Flex flex={1} align={"center"}>
           <Link

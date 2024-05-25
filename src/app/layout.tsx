@@ -37,7 +37,7 @@ export default function RootLayout({
             color="primary.light"
             align="center"
             as="main"
-            p={2}
+            p={8}
             lineHeight={1.8}
           >
             {children}

@@ -24,7 +24,7 @@ export default function Navbar() {
       as="header"
       flexWrap={"wrap"}
       width="100%"
-      p={2}
+      px={8} py={2}
       justify="center"
       fontSize="xl"
       fontFamily={"secondary"}
@@ -39,8 +39,9 @@ export default function Navbar() {
         h={20}
         py={4}
         align={"center"}
+        justify={"space-between"}
       >
-        <Flex flex={1} align={"center"}>
+        <Flex align={"center"}>
           <Link
             as={NextLink}
             href="/"
@@ -80,12 +81,16 @@ export default function Navbar() {
 const DesktopNav = () => {
   return (
     <Stack
-      flex={1}
       as={List}
       direction={"row"}
       align="center"
       justify="space-between"
       display={{ base: "none", md: "flex" }}
+      bgImage={{ md: "/icons/chain_white.png" }}
+      bgSize="auto 14px"
+      bgRepeat="repeat-x"
+      bgPosition="center"
+      spacing={8}
     >
       {NAV_ITEMS.map((navItem) => (
         <ListItem
@@ -95,12 +100,14 @@ const DesktopNav = () => {
           bg="primary.dark"
           px={5}
           py={2}
-          w={140}
+          w={120}
           textAlign="center"
           border="1px"
+          borderRadius="8px"
           borderColor="gray.400"
           borderStyle="solid"
-          _hover={{ bg: "gray.300", color: "black" }}
+          _hover={{ bg: "#f5f5f5", color: "#141414" }}
+
         >
           {navItem.label}
         </ListItem>

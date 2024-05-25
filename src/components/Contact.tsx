@@ -8,8 +8,9 @@ import NextLink from "next/link";
 import { mailToText } from "./types";
 export default function Contact() {
     return (
-        <Flex as="section" id="contact" w={"100%"} maxW="4xl" bgColor="primary.dark" p={8} mb={16} direction="column" align="center" border={2} borderStyle="solid" borderColor="primary.light">
-            <Heading as="h2" fontSize="3xl" mb={8} textAlign="center" fontFamily="secondary" fontWeight="500" lineHeight={1.4}>
+        <Flex as="section" id="contact" w={"100%"} maxW="4xl" bgColor="primary.dark" p={8} mb={16} direction="column" align="center" border={2} borderStyle="solid"
+            borderColor="primary.light" borderRadius="16px">
+            <Heading as="h2" fontSize="3xl" mb={8} textAlign="center" fontFamily="secondary" fontWeight="500" lineHeight={1.4} color="#8f8f8f">
                 Contact
             </Heading>
             <Text>
@@ -18,11 +19,11 @@ export default function Contact() {
                 Whether you have an idea, a job opportunity, or just a friendly greeting, I would love to hear from you. 
                 Don’t hesitate to contact me and let’s make something awesome together!`}
             </Text>
-            <Button mt={8} fontSize="xl"
-                as={NextLink} href={mailToText} variant="ghost"
-                fontWeight={500} border={1} borderStyle="solid" color="tertiary.light" borderColor="tertiary.light" px={4} py={2} borderRadius={0}
-                _hover={{ bg: "secondary.light", color: "gray.50", borderColor: "secondary.light" }}
-                _focus={{ bg: "blue.50", color: "blue.700", borderColor: "blue.700", borderWidth: 3 }} >Get in touch</Button>
+            <Button px={8} py={2} borderRadius="8px" bgColor="#f5f5f5" color="#141414" mt="12px"
+                _focus={{ bgColor: "#b355fd", color: "#f5f5f5", borderWidth: 3 }}
+                _hover={{ bgColor: "#b355fd", color: "#f5f5f5" }} >
+                Get in Touch
+            </Button>
         </Flex>
     );
 }

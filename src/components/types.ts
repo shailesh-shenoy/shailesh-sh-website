@@ -1,9 +1,9 @@
-export interface Skill {
+export interface SkillInfo {
     name: string;
     iconClass: string;
 }
 
-export const allSkills: Record<string, Skill> = {
+export const allSkills: Record<string, SkillInfo> = {
     "Solidity": {
         name: "Solidity",
         iconClass: "devicon-solidity-plain",

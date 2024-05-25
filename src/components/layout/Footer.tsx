@@ -28,7 +28,6 @@ export default function Footer() {
             lineHeight={1.8}
             fontFamily="primary"
             fontWeight={400}
-            fontSize="lg"
         >
             <Flex as={Stack} pt={10} px={10} pb={5}>
                 <SimpleGrid
@@ -41,13 +40,13 @@ export default function Footer() {
                                 <Image src="/logo.png" alt="Shailesh Shenoy's Portfolio" w={48} h="auto" />
                             </Link>
                         </Flex>
-                        <Text fontSize={"md"} align={"center"}>
+                        <Text fontSize={"md"} align={"center"} color="#8f8f8f">
                             © 2024 Shailesh Shenoy.
                         </Text>
                     </Stack>
 
                     <Flex direction="column" align="center" h="100%">
-                        <Stack align="flex-end">
+                        <Stack>
                             <ListHeader>Site</ListHeader>
                             {NAV_ITEMS.map((navItem) => (
                                 <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "tertiary.light" }}>
@@ -57,7 +56,7 @@ export default function Footer() {
                         </Stack>
                     </Flex>
                     <Flex direction="column" align="center" h="100%">
-                        <Stack align="flex-end"><ListHeader>Socials</ListHeader>
+                        <Stack><ListHeader>Socials</ListHeader>
                             {SOCIALS.map((navItem) => (
                                 <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "tertiary.light" }}>
                                     {navItem.label}
@@ -73,7 +72,7 @@ export default function Footer() {
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
     return (
-        <Heading lineHeight="1.4" as="h4" fontWeight={"500"} color="gray.400" fontSize={"2xl"} fontFamily="secondary" mb={2}>
+        <Heading lineHeight="1.4" as="h4" fontWeight={"500"} color="#8f8f8f" fontSize={"2xl"} fontFamily="secondary" mb={2}>
             {children}
         </Heading>
     );

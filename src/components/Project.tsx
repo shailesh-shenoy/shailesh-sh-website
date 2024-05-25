@@ -32,7 +32,7 @@ const Project: React.FC<ProjectData> = ({
       filter="grayscale(0.9)"
       //@ts-ignore
       border={1} borderColor="gray.700" borderStyle="solid" as={disabled ? "div" : NextLink} href={link} target="_blank"
-      _hover={{ transform: "scale(1.01)", filter: "grayscale(0.2)" }} _focusWithin={{ transform: "scale(1.02)" }} transition="transform 0.2s ease-in-out"
+      _hover={{ transform: "scale(1.01)", filter: "grayscale(0.2)" }} transition="transform 0.2s ease-in-out"
     >
       <Image
         minW={"64"}
@@ -40,7 +40,7 @@ const Project: React.FC<ProjectData> = ({
         h={"auto"}
         src={imageUrl}
         alt={name}
-        borderRight={1} borderBottom={1} borderColor="gray.700" borderStyle="solid"
+        borderRight={1} borderColor="gray.700" borderStyle="solid"
       />
 
       <Stack direction="column" p={4} flex={3}>
@@ -54,22 +54,10 @@ const Project: React.FC<ProjectData> = ({
             {skills?.map(
               (skill) =>
                 allSkills[skill] && (
-                  <Box as="i" key={skill} className={allSkills[skill]?.iconClass} fontSize={"2xl"} color="secondary.light" />
+                  <Box as="i" key={skill} className={allSkills[skill]?.iconClass} fontSize={"2xl"} color="#b355fd" />
                 )
             )}
-            {!disabled && <Image w={10} ml="auto"
-              role="link" tabIndex={0} data-href={github} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github link" bg="white" border={1} borderStyle="solid" borderRadius={8}
-              _hover={{ transform: "scale(1.2)" }}
-              _focus={{ transform: "scale(1.2)" }}
-              transition="transform 0.2s ease-in-out" onClick={(e) => {
-                e.stopPropagation();
-                e.preventDefault();
-                router.push(github);
-              }
-              }
-            />}
           </Stack>
-
         </Stack>
       </Stack>
     </Flex>

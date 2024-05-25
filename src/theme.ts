@@ -2,8 +2,8 @@ import { extendBaseTheme } from "@chakra-ui/react";
 
 export const customTheme = extendBaseTheme({
   fonts: {
-    primary: `'Lora Variable', sans-serif`,
-    secondary: `'Bebas Neue', sans-serif`,
+    primary: `'Inter', sans-serif`,
+    secondary: `'Lora Variable', sans-serif`,
   },
   colors: {
     primary: {

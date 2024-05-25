@@ -57,7 +57,7 @@ export default function Footer() {
                     </Flex>
                     <Flex direction="column" align="center" h="100%">
                         <Stack><ListHeader>Socials</ListHeader>
-                            {SOCIALS.map((navItem) => (
+                            {Object.values(SOCIALS).map((navItem) => (
                                 <Link as={NextLink} key={navItem.label} href={navItem.link} _hover={{ color: "tertiary.light" }}>
                                     {navItem.label}
                                 </Link>

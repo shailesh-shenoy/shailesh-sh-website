@@ -19,19 +19,19 @@ export const NAV_ITEMS: Array<NavItem> = [
     },
 ];
 
-export const SOCIALS: Array<NavItem> = [
-    {
+export const SOCIALS: Record<string, NavItem> = {
+    "Github": {
         label: "Github",
         link: "https://github.com/shailesh-shenoy/",
     },
-    {
+    "Linkedin": {
         label: "Linkedin",
         link: "https://www.linkedin.com/in/shailesh-shenoy/",
     },
-    {
+    "Resume": {
         label: "Resume",
         link: "/Shailesh_Resume.pdf",
     },
-];
+};
 
 export type { NavItem };
